@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     marginBottom: 43,
     justifyContent: 'flex-end',
+    alignContent: 'flex-start',
+    alignItems: 'flex-start',
     height: '100%',
   },
   genreTagContainer: {
