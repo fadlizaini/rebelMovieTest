@@ -15,6 +15,7 @@ const style = StyleSheet.create({
     borderRadius: 50,
     borderWidth: 1,
     borderColor: yellow,
+    width: '100%',
   },
   title: {
     fontSize: 14,

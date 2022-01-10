@@ -5,20 +5,22 @@ const {height, width} = Dimensions.get('window');
 const styles = StyleSheet.create({
   screenContainer: {
     width,
-    height,
-    backgroundColor: background,
     alignItems: 'center',
+    paddingBottom: 20,
   },
-
+  scrollContainer: {width, height, backgroundColor: background},
   headerContainer: {
     width,
     height: '100%',
     justifyContent: 'flex-end',
+    alignContent: 'flex-start',
+    alignItems: 'flex-start',
   },
   headerContentContainer: {
     marginLeft: 15,
     marginBottom: 43,
-    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    height: '100%',
   },
   genreTagContainer: {
     backgroundColor: 'rgba(15, 239, 253, 0.1)',
@@ -28,6 +30,29 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 8,
     marginTop: 34,
     marginBottom: 12,
+  },
+
+  divider: {
+    width: '100%',
+    height: 1,
+    backgroundColor: white,
+    opacity: 0.1,
+  },
+  movieListHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginLeft: 15,
+    marginRight: 22.4,
+    marginBottom: 15,
+  },
+  movieListItemContainer: {
+    marginRight: 10,
+    width: 160,
+    height: 220,
+    justifyContent: 'flex-end',
+    alignItems: 'flex-start',
+    padding: 10,
   },
 
   //text
