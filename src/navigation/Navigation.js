@@ -15,7 +15,11 @@ export default function Navigation() {
             component={Home}
             options={{headerShown: false}}
           />
-          <Stack.Screen name="detail" component={Detail} />
+          <Stack.Screen
+            name="detail"
+            component={Detail}
+            options={{headerShown: false}}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>

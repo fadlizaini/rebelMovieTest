@@ -3,6 +3,7 @@ import {Text, View, Dimensions} from 'react-native';
 import {getGenre, getMovie} from '../../service/service.home';
 import styles from '../../styles';
 import HomeHeader from './components/HomeHeader';
+import MovieList from './components/MovieList';
 const {height, width} = Dimensions.get('window');
 
 export default function Home(props) {
@@ -54,9 +55,10 @@ export default function Home(props) {
 
   return (
     <View style={[styles.screenContainer]}>
-      <View style={{height: height / 3}}>
+      <View style={{height: 280}}>
         <HomeHeader movies={headerData} navigation={props.navigation} />
       </View>
+      <MovieList data={movies} />
     </View>
   );
 }
